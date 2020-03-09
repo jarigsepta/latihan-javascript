@@ -1,4 +1,4 @@
-//Studi Kasus Angkot
+//Coba Studi Kasus Angkot
 var penumpang = [];
 var tambahPenumpang = function(namaPenumpang, penumpang) {
   if (penumpang.length == 0) {
