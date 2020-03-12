@@ -1,4 +1,5 @@
 // 1. Object Literal
+// Problem : Tidak Efektif untuk Object yang Banyak
 let mahasiswa1 = {
     nama: 'Joni',
     energy: 10,
@@ -59,3 +60,32 @@ function Mahasiswa(nama, energy) {
 }
 
 let toni = new Mahasiswa('Toni', 10);
+
+
+
+// 4. Function Declaration + Object.create()
+
+const methodMahasiswa = {
+    makan: function (porsi) {
+        this.energy += porsi;
+        console.log(`Halo ${this.nama}, Selamat Makan !`);
+    },
+    main: function (jam) {
+        this.energy -= jam;
+        console.log(`Halo ${this.nama}, Selamat Bermain !`);
+    },
+    tidur: function (jam) {
+        this.energy += jam * 2;
+        console.log(`Halo ${this.nama}, Selamat Tidur !`);
+    }
+};
+
+function Mahasiswa(nama, energy) {
+    let mahasiswa = Object.create(methodMahasiswa);
+    mahasiswa.nama = nama;
+    mahasiswa.energy = energy;
+
+    return mahasiswa;
+}
+
+let jamal = Mahasiswa('Jamal', 10);
