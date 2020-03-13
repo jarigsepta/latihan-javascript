@@ -113,3 +113,26 @@ Mahasiswa.prototype.tidur = function (jam) {
 };
 
 let surya = new Mahasiswa("Surya", 100);
+
+
+// 6. Versi Class
+class Mahasiswa {
+    constructor(nama, energy) {
+        this.nama = nama;
+        this.energy = energy;
+    }
+    makan(porsi) {
+        this.energy += porsi;
+        return `Halo ${this.nama}, Selamat Makan`
+    }
+    main(jam) {
+        this.energy -= jam;
+        return `Halo ${this.nama}, Selamat Main`
+    }
+    tidur(jam) {
+        this.energy += jam * 2;
+        return `Halo ${this.nama}, Selamat Tidur`
+    }
+}
+
+let samsul = new Mahasiswa("Samsul", 100);
