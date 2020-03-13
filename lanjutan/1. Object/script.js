@@ -89,3 +89,27 @@ function Mahasiswa(nama, energy) {
 }
 
 let jamal = Mahasiswa('Jamal', 10);
+
+
+// 5. Prototype
+function Mahasiswa(nama, energy) {
+    this.nama = nama;
+    this.energy = energy;
+}
+
+Mahasiswa.prototype.makan = function (porsi) {
+    this.energy += porsi;
+    return `Halo ${this.nama}, Selamat Makan`;
+};
+
+Mahasiswa.prototype.main = function (jam) {
+    this.energy -= jam;
+    return `Halo ${this.nama}, Selamat Main`;
+};
+
+Mahasiswa.prototype.tidur = function (jam) {
+    this.energy += jam * 2;
+    return `Halo ${this.nama}, Selamat Tidur`;
+};
+
+let surya = new Mahasiswa("Surya", 100);
