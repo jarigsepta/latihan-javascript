@@ -49,3 +49,21 @@ function a() {
 }
 
 a();
+
+
+
+// Contoh Execution Context, Hoisting & Scope
+function satu() {
+  var nama = 'Joko';
+  console.log(nama);
+}
+
+function dua() {
+  console.log(nama);
+}
+
+console.log(nama);
+var nama = 'Toni';
+satu();
+dua('Doddy');
+console.log(nama);
