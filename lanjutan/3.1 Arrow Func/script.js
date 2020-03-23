@@ -10,3 +10,16 @@ const tampilNama = (nama, waktu) => {
 }
 
 console.log(tampilNama('Erik', 'Malam'));
+
+
+// contoh arrow function
+let mahasiswa = ['Tantowi', 'Ahmad', 'Kevin'];
+let jumlahHuruf = mahasiswa.map(nama => nama.length);
+console.log(jumlahHuruf);
+
+
+let jHuruf = mahasiswa.map(nama => ({
+    nama,
+    jmlHuruf: nama.length
+}));
+console.table(jHuruf);
