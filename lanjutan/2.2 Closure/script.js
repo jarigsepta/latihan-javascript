@@ -31,3 +31,17 @@ let selamatSiang = ucapkanSalam('Siang');
 let selamatMalam = ucapkanSalam('Malam')
 
 console.dir(selamatMalam('Joni'));
+
+
+
+// contoh kasus closure
+let add = (function () {
+    let counter = 0;
+    return function () {
+        return ++counter;
+    }
+})();
+
+console.log(add());
+console.log(add());
+console.log(add());
