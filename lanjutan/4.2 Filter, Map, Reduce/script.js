@@ -18,6 +18,11 @@ const angka = [-4, 8, 3, -6, 9, 3, -2, 5, 6];
 
 // map dg arrow function
 // kalikan semua angka dg 2
-const newAngka = angka.map(a => a * 2);
-console.log(angka);
+// const newAngka = angka.map(a => a * 2);
+// console.log(angka);
+// console.log(newAngka);
+
+
+// reduce dg arrow function
+const newAngka = angka.reduce((accumulator, currentValue) => accumulator + currentValue);
 console.log(newAngka);
