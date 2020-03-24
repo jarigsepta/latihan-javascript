@@ -12,5 +12,12 @@ const angka = [-4, 8, 3, -6, 9, 3, -2, 5, 6];
 
 
 // filter dg arrow function
-const newAngka = angka.filter(a => a >= 3);
+// const newAngka = angka.filter(a => a >= 3);
+// console.log(newAngka);
+
+
+// map dg arrow function
+// kalikan semua angka dg 2
+const newAngka = angka.map(a => a * 2);
+console.log(angka);
 console.log(newAngka);
