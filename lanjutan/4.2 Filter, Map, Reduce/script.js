@@ -24,5 +24,16 @@ const angka = [-4, 8, 3, -6, 9, 3, -2, 5, 6];
 
 
 // reduce dg arrow function
-const newAngka = angka.reduce((accumulator, currentValue) => accumulator + currentValue);
-console.log(newAngka);
+// const newAngka = angka.reduce((accumulator, currentValue) => accumulator + currentValue);
+// console.log(newAngka);
+
+
+// method chaining
+// cari angka > 5
+// kalikan 3
+// jumlahkan
+
+const hasil = angka.filter(a => a > 5)
+    .map(a => a * 3)
+    .reduce((acc, cur) => acc + cur);
+console.log(hasil);
