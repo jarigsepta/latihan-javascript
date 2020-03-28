@@ -28,6 +28,11 @@ function tes() {
 const [f, g] = tes();
 console.log(g);
 
+// rest parameter
+const [h, ...bebas] = [1, 2, 3, 4, 5, 6];
+console.log(h);
+console.log(bebas);
+
 
 // Object Literal
 const mhs = {
