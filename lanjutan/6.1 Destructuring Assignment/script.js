@@ -11,6 +11,16 @@ const perkenalan = ['Halo', 'nama', 'saya', 'septa'];
 const [salam, , , name] = perkenalan;
 console.log(salam);
 
+// swap items
+let d = 1;
+let e = 2;
+console.log(d);
+console.log(e);
+[d, e] = [e, d];
+console.log(d);
+console.log(e);
+
+
 // Object Literal
 const mhs = {
     nama: 'Joko',
