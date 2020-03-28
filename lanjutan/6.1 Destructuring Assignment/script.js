@@ -6,6 +6,11 @@ console.log(a);
 console.log(b);
 console.log(c);
 
+// Skipping items dg array
+const perkenalan = ['Halo', 'nama', 'saya', 'septa'];
+const [salam, , , name] = perkenalan;
+console.log(salam);
+
 // Object Literal
 const mhs = {
     nama: 'Joko',
