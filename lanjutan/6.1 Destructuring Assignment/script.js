@@ -20,6 +20,14 @@ console.log(e);
 console.log(d);
 console.log(e);
 
+// return value pada function
+function tes() {
+    return [1, 2]
+}
+
+const [f, g] = tes();
+console.log(g);
+
 
 // Object Literal
 const mhs = {
