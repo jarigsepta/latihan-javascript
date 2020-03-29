@@ -86,3 +86,16 @@ const {
     email: em = 'email@gamil.com'
 } = pelajarr;
 console.log(em);
+
+// rest parameter
+const mahasiswaa = {
+    namaaa: 'Sukardi',
+    umur: 24,
+    email: 'sukardi1@gmail.com'
+}
+
+const {
+    namaaa,
+    ...nilai
+} = mahasiswaa;
+console.log(nilai);
