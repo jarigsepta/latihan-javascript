@@ -59,3 +59,15 @@ console.log(email);
     umurr: 23
 });
 console.log(namaa);
+
+// assignment ke variabel baru
+const pelajar = {
+    nama: 'samsul',
+    umur: 17
+}
+
+const {
+    nama: n,
+    umur: u
+} = pelajar;
+console.log(u);
