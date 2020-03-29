@@ -49,3 +49,13 @@ const {
 console.log(nama);
 console.log(umur);
 console.log(email);
+
+// assignment tanpa deklarasi object
+({
+    namaa,
+    umurr
+} = {
+    namaa: 'Joko',
+    umurr: 23
+});
+console.log(namaa);
