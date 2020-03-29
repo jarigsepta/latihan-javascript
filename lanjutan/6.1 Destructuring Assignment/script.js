@@ -71,3 +71,18 @@ const {
     umur: u
 } = pelajar;
 console.log(u);
+
+
+// memberikan default value + assign ke variabel baru
+const pelajarr = {
+    nama: 'andi',
+    umur: 15,
+    email: 'andi123@gmail.com'
+}
+
+const {
+    nama: na,
+    umur: um,
+    email: em = 'email@gamil.com'
+} = pelajarr;
+console.log(em);
