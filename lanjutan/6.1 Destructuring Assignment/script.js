@@ -88,14 +88,14 @@ const {
 console.log(em);
 
 // rest parameter
-const mahasiswaa = {
-    namaaa: 'Sukardi',
-    umur: 24,
-    email: 'sukardi1@gmail.com'
-}
+// const mahasiswaa = {
+//     namaaa: 'Sukardi',
+//     umur: 24,
+//     email: 'sukardi1@gmail.com'
+// }
 
-const {
-    namaaa,
-    ...nilai
-} = mahasiswaa;
-console.log(nilai);
+// const {
+//     namaaa,
+//     ...nilai
+// } = mahasiswaa;
+// console.log(nilai);
