@@ -29,3 +29,30 @@ console.log(kurang);
 console.log(tambah);
 console.log(bagi);
 console.log(kali);
+
+
+// Destructuring Function Arguments
+const mhs1 = {
+    nama: 'Joko',
+    umur: 23,
+    email: 'joko1@gmail.com',
+    nilai: {
+        tugas: 90,
+        uts: 85,
+        uas: 80
+    }
+}
+
+function cetakMhs({
+    nama,
+    umur,
+    nilai: {
+        tugas,
+        uts,
+        uas
+    }
+}) {
+    return `Halo, nama ${nama}, umur ${umur} tahun dan nilai tugas ${tugas}, uts ${uts}, uas ${uas}`;
+}
+
+console.log(cetakMhs(mhs1));
