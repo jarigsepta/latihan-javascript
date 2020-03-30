@@ -46,13 +46,14 @@ const mhs1 = {
 function cetakMhs({
     nama,
     umur,
+    email,
     nilai: {
         tugas,
         uts,
         uas
     }
 }) {
-    return `Halo, nama ${nama}, umur ${umur} tahun dan nilai tugas ${tugas}, uts ${uts}, uas ${uas}`;
+    return `Halo, nama ${nama}, umur ${umur} tahun, email ${email} dan nilai tugas ${tugas}, uts ${uts}, uas ${uas}`;
 }
 
 console.log(cetakMhs(mhs1));
