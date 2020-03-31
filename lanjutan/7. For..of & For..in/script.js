@@ -34,3 +34,15 @@ function jumlahkanAngka() {
 }
 
 console.log(jumlahkanAngka(1, 2, 3, 4, 5));
+
+// for..in
+const mahasiswa = {
+    nama: 'Ronaldo',
+    usia: 23,
+    email: 'ronaldo23@gmail.com'
+}
+
+for (const m in mahasiswa) {
+    console.log(mahasiswa[m]);
+
+}
