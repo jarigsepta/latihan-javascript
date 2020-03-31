@@ -23,3 +23,14 @@ const liNama = document.querySelectorAll('.nama');
 for (const n of liNama) {
     console.log(n.innerHTML);
 }
+
+// arguments
+function jumlahkanAngka() {
+    let jumlah = 0;
+    for (const a of arguments) {
+        jumlah += a;
+    }
+    return jumlah;
+}
+
+console.log(jumlahkanAngka(1, 2, 3, 4, 5));
