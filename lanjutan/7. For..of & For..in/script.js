@@ -17,3 +17,9 @@ for (const n of nama) {
 for (const [i, m] of mhs.entries()) {
     console.log(`${m} adalah mahasiswa ke-${i}`);
 }
+
+// Nodelist
+const liNama = document.querySelectorAll('.nama');
+for (const n of liNama) {
+    console.log(n.innerHTML);
+}
