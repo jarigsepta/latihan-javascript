@@ -16,3 +16,7 @@ const mahasiswa1 = [...mahasiswa]
 mahasiswa1[0] = 'Fajar'
 console.log(mahasiswa);
 console.log(mahasiswa1);
+
+const liMhs = document.querySelectorAll('li');
+const mahasiswaa = [...liMhs].map(m => m.textContent);
+console.log(mahasiswaa);
