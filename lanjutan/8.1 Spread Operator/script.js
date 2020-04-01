@@ -20,3 +20,8 @@ console.log(mahasiswa1);
 const liMhs = document.querySelectorAll('li');
 const mahasiswaa = [...liMhs].map(m => m.textContent);
 console.log(mahasiswaa);
+
+
+const nama = document.querySelector('.nama');
+const huruf = [...nama.textContent].map(h => `<span>${h}</span>`).join('');
+nama.innerHTML = huruf;
