@@ -8,3 +8,11 @@ console.log(orang);
 // menambah array lain
 const org = [...mhs, 'Jimmy', ...dosen];
 console.log(org);
+
+
+// mengcopy array
+const mahasiswa = ['Jono', 'Joni', 'jamal'];
+const mahasiswa1 = [...mahasiswa]
+mahasiswa1[0] = 'Fajar'
+console.log(mahasiswa);
+console.log(mahasiswa1);
