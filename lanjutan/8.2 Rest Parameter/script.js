@@ -13,3 +13,14 @@ function functionKu() {
 }
 // mengubah object menjadi array
 console.log(functionKu(5, 4, 3, 2, 1));
+
+
+function jumlahkan(...angka) {
+    let total = 0;
+    for (const a of angka) {
+        total += a;
+    }
+    return total;
+}
+
+console.log(jumlahkan(1, 2, 3, 4, 5));
