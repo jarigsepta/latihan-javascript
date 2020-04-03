@@ -36,3 +36,17 @@ console.log(penjumlahan(1, 2, 3, 4, 5));
 const kelompok1 = ['ROnaldo', 'Raul', 'Kaka', 'Suarez', 'Fernando'];
 const [ketua, wakil, ...anggota] = kelompok1;
 console.log(anggota);
+
+// rest parameter dg object destructuring
+const team = {
+    pm: 'Ronaldo',
+    frondEnd: 'Messi',
+    backEnd: 'Dida',
+    ux: 'Pirlo',
+    devOps: 'Robert'
+}
+const {
+    pm,
+    ...myTeam
+} = team;
+console.log(myTeam);
