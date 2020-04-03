@@ -24,3 +24,10 @@ function jumlahkan(...angka) {
 }
 
 console.log(jumlahkan(1, 2, 3, 4, 5));
+
+
+// rest parameter dg reduce
+function penjumlahan(...angka) {
+    return angka.reduce((a, b) => a + b);
+}
+console.log(penjumlahan(1, 2, 3, 4, 5));
