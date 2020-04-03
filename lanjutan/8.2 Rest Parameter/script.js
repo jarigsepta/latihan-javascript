@@ -31,3 +31,8 @@ function penjumlahan(...angka) {
     return angka.reduce((a, b) => a + b);
 }
 console.log(penjumlahan(1, 2, 3, 4, 5));
+
+// rest parameter dg array destructuring
+const kelompok1 = ['ROnaldo', 'Raul', 'Kaka', 'Suarez', 'Fernando'];
+const [ketua, wakil, ...anggota] = kelompok1;
+console.log(anggota);
