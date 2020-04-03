@@ -50,3 +50,10 @@ const {
     ...myTeam
 } = team;
 console.log(myTeam);
+
+
+// rest parameter dg filtering
+function filterBy(type, ...values) {
+    return values.filter(v => typeof v === type);
+}
+console.log(filterBy('boolean', 1, 2, 'Kaka', false, 10, true, 'Ronaldo'));
