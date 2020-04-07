@@ -1,0 +1,22 @@
+[{
+        "nama": "Ronaldo",
+        "npm": "1534010001",
+        "email": "ronaldo@gmail.com",
+        "jurusan": "Teknik Informatika",
+        "idDosenWali": 1
+    },
+    {
+        "nama": "Messi",
+        "npm": "1534010002",
+        "email": "messi@gmail.com",
+        "jurusan": "Teknik Informatika",
+        "idDosenWali": 2
+    },
+    {
+        "nama": "Benzema",
+        "npm": "1534010003",
+        "email": "benzema@gmail.com",
+        "jurusan": "Teknik Informatika",
+        "idDosenWali": 3
+    }
+]
