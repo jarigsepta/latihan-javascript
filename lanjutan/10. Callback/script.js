@@ -4,12 +4,11 @@ function halo(nama) {
 }
 
 function tampilkanPesan(callback) {
-    const nama = prompt('Masukkan Nama : ');
+    const nama = prompt("Masukkan Nama : ");
     callback(nama);
 }
 
 tampilkanPesan(halo);
-
 
 // asynchronous callback
 function getDataMahasiswa(url, success, error) {
@@ -23,12 +22,25 @@ function getDataMahasiswa(url, success, error) {
                 error();
             }
         }
-    }
-    xhr.open('get', url);
+    };
+    xhr.open("get", url);
     xhr.send();
 }
-getDataMahasiswa('mahasiswa.json', results => {
-    console.log(JSON.parse(results));
-}, () => {
+getDataMahasiswa(
+    "mahasiswa.json",
+    (results) => {
+        console.log(JSON.parse(results));
+    },
+    () => {}
+);
 
-})
+//Menggunakan Jquery
+$.ajax({
+    url: "mahasiswa.json",
+    success: (mhs) => {
+        mhs.forEach((m) => console.log(m.nama));
+    },
+    error: (e) => {
+        console.log(e.responseText);
+    },
+});
