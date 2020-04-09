@@ -44,3 +44,14 @@ $.ajax({
         console.log(e.responseText);
     },
 });
+
+// Contoh 
+$.ajax({
+    url: "mahasiswa.json",
+    success: (mhs) => {
+        mhs.forEach((m) => console.log(m.npm));
+    },
+    error: (e) => {
+        console.log(e.responseText);
+    },
+});
