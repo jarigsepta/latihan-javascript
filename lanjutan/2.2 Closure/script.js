@@ -45,3 +45,14 @@ let add = (function () {
 console.log(add());
 console.log(add());
 console.log(add());
+
+function MyObject(nama, pesan) {
+    this.nama = nama.toString();
+    this.pesan = pesan.toString();
+}
+MyObject.prototype.getNama = function () {
+    return this.nama;
+};
+MyObject.prototype.getPesan = function () {
+    return this.pesan;
+};
