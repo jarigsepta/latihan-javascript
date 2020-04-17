@@ -55,3 +55,20 @@ $.ajax({
         console.log(e.responseText);
     },
 });
+
+(function () {
+
+    console.log('mulai');
+
+    setTimeout(function cb() {
+        console.log('Callback 1');
+    }); // has a default time value of 0
+
+    console.log('pesan');
+
+    setTimeout(function cb1() {
+        console.log('Callback 2');
+    }, 0);
+
+    console.log('Selesai');
+})();
