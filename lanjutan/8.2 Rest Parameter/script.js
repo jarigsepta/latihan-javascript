@@ -42,7 +42,10 @@ const team = {
   ux: "Pirlo",
   devOps: "Robert"
 };
-const { pm, ...myTeam } = team;
+const {
+  pm,
+  ...myTeam
+} = team;
 console.log(myTeam);
 
 // rest parameter dg filtering
@@ -56,3 +59,14 @@ function filterCoba(type, ...values) {
   return values.filter(v => typeof v === type);
 }
 console.log(filterCoba("string", "Joko", "Joni", 12, false, 19, true, "Aldo"));
+
+// Contoh
+function sum(...theArgs) {
+  return theArgs.reduce((previous, current) => {
+    return previous + current;
+  });
+}
+
+console.log(sum(1, 2, 3));
+
+console.log(sum(1, 2, 3, 4));
