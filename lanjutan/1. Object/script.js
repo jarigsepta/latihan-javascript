@@ -61,6 +61,17 @@ function Mahasiswa(nama, energy) {
 
 let toni = new Mahasiswa('Toni', 10);
 
+// Contoh lain
+function Manusia(nama, tanggalLahir, tempatLahir, jenisKelamin, tempatTinggal) {
+    this.nama = nama
+    this.tanggalLahir = tanggalLahir
+    this.tempatLahir = tempatLahir
+    this.jenisKelamin = jenisKelamin
+    this.tempatTinggal = tempatTinggal
+}
+
+var samsul = new Manusia('Samsul', '10 Januari 1996', 'Surabaya', 'Laki-Laki', 'Surabaya');
+var charles = new Manusia('Charles', '08 Maret 1980', 'Maluku', 'Laki-Laki', 'Maluku')
 
 
 // 4. Function Declaration + Object.create()
